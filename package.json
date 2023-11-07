@@ -6,11 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "script": "tsc --outDir ./dist script/start.ts && node dist/script/start.js",
+    "script:image": "tsc --outDir ./dist script/start.ts && set ETSY_INCLUDE_IMAGE=true&& node dist/script/start.js",
+    "script:update": "tsc --outDir ./dist script/start.ts && set ETSY_UPDATE=true&& node dist/script/start.js",
+    "script:force": "tsc --outDir ./dist script/start.ts && set ETSY_FORCE_UPDATE=true&& node dist/script/start.js"
   },
   "dependencies": {
+    "@types/jsdom": "^21.1.4",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security",
+    "jsdom": "^22.1.0",
     "mongodb": "^6.2.0",
     "next": "14.0.1",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -23,6 +33,7 @@
     "eslint-config-next": "14.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
+    "tslib": "^2.6.2",
     "typescript": "^5"
   }
 }
