@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { list } from '@/db/customer'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,7 +14,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  //console.log(await list());
+  console.log("Hello there");
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>

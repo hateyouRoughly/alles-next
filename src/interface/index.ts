@@ -4,6 +4,7 @@ export interface CustomEnv {
     CONNECTION_URL?: string | any;
 
     // etsy configuration
+    ETSY_BASE_URL?: string | any;
     ETSY_END_POINT?: string | any;
     ETSY_SELLER?: string | any;
     ETSY_INCLUDE_IMAGE?: string;
