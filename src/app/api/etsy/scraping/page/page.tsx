@@ -1,6 +1,5 @@
 'use client';
 import { scrap } from "@/etsy/scraping";
-import { revalidatePath } from "next/cache";
 import React from "react";
 
 export default function page(){

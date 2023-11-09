@@ -14,7 +14,6 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  console.log("Hello there");
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
