@@ -1,4 +1,8 @@
 export interface CustomEnv {
+
+    //developer configuration
+    NODE_ENV?: string | any;
+
     // database configuration
     DB_NAME?: string | any
     CONNECTION_URL?: string | any;
