@@ -26,7 +26,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/etsy/*": ["./script/etsy/*"]
+      "@/etsy/*": ["./script/etsy/*"],
+      "@/inventory/*": ["./inventory/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
